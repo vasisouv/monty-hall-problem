@@ -1,9 +1,12 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  margin-left:100px;
-  padding:10px;
+
+button{
+  margin-top:25px;
 }
+.row{
+  margin-top:25px;
+
+}
+
