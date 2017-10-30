@@ -1,9 +1,7 @@
 button:hover{
     cursor:pointer;
 }
-.door-container{
 
-}
 .door-cover{
     position:absolute;
     background-color:red;
