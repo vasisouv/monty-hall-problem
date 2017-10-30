@@ -20,8 +20,8 @@
 
         <h1 class="display-2">The Monty Hall Problem</h1>
 
-        <p class="lead">This website allows the user to simulate the problem and play standalone versions or run multiple
-            consecutive tests and estimate the precision of either switching or not switching doors.</p>
+        <p class="lead">This website allows the user to simulate the Monty Hall Problem by either playing standalone games or running multiple
+            consecutive automatic simulations of it.</p>
         <p>
             <a class="btn btn-info" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Learn more about Monty Hall Problem
@@ -51,44 +51,36 @@
     </div>
     <div id="accordion" role="tablist">
         <div class="card  ">
-            <div class="card-header bg-primary text-white" role="tab" id="headingOne">
+            <div class="card-header" role="tab" id="headingOne">
                 <h5 class="mb-0">
-                    <a class=" text-white" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <a  data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Play the game
                     </a>
                 </h5>
             </div>
-            <!--<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">-->
-                <!--<div class="card-header">Header</div>-->
-                <!--<div class="card-body">-->
-                    <!--<h4 class="card-title">Primary card title</h4>-->
-                    <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-                <!--</div>-->
-            <!--</div>-->
             <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <div class="doors-container">
                         <div class="door">
-                            <div class="door-cover"></div>
-                            <div class="door-content"></div>
+                            <div class="door-cover bg-primary"></div>
+                            <div class="door-content bg-secondary"></div>
                         </div>
                         <div class="door">
-                            <div class="door-cover"></div>
-                            <div class="door-content"></div>
+                            <div class="door-cover bg-primary"></div>
+                            <div class="door-content bg-secondary"></div>
                         </div>
                         <div class="door">
-                            <div class="door-cover"></div>
-                            <div class="door-content"></div>
+                            <div class="door-cover bg-primary"></div>
+                            <div class="door-content bg-secondary"></div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         <div class="card">
             <div class="card-header" role="tab" id="headingTwo">
                 <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                         Run multiple simulations
                     </a>
                 </h5>

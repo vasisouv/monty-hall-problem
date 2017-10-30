@@ -27,7 +27,7 @@ function initializeDoors() {
     icon = "<i class='door-icon' data-feather='award'></i>";
     $(correctDoor).find(".door-content").html(icon);
 
-    icon = "<i class='door-icon' data-feather='x-circle'></i>";
+    icon = "<i class='door-icon ' data-feather='x-circle'></i>";
     wrongDoors.forEach(function (d) {
         $(d).find(".door-content").html(icon);
     });
