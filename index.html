@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="res/css/style.css">
+</head>
+<body>
+
+
+<main role="main" class="container">
+
+    <div>
+        <h1>The Monty Hall Problem</h1>
+
+        <p class="lead">This website allows the user to simulate the problem and play standalone versions or run multiple
+            consecutive tests and estimate the precision of either switching or not switching doors.</p>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Learn more about Monty Hall Problem
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <blockquote class="blockquote">
+                    <p class="mb-0">The Monty Hall problem is a brain teaser, in the form of a probability puzzle, loosely based
+                        on the American television game show Let's Make a Deal and named after its original host, Monty Hall.
+                        The problem is the following: Suppose you're on a game show, and you're given the choice of three doors:
+                        Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows
+                        what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you,
+                        "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?</p>
+                    <footer class="blockquote-footer"><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">
+                        <cite title="Source Title">Wikipedia</cite></a></footer>
+                </blockquote>
+                <p class="lead">While this may seem like a nobrainer at first, since the general assumption should be that each door
+                    has a 1/3 probality to contain the car, <a href="https://en.wikipedia.org/wiki/Marilyn_vos_Savant">Vos Savant</a>
+                    has proven that the contestants who switch to the other door have a 2/3 chance of winning the car, while
+                    contestants who stick to their initial choice have only a 1/3 chance.</p>
+            </div>
+        </div>
+    </div>
+    <div id="accordion" role="tablist">
+        <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Play the game
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="doors-container">
+                        <div class="door">
+                            <div class="door-cover">
+                                <div class="door-content">content</div>
+                            </div>
+                        </div>
+                        <div class="door">
+                            <div class="door-cover">
+                                <div class="door-content">content</div>
+                            </div>
+                        </div>
+                        <div class="door">
+                            <div class="door-cover">
+                                <div class="door-content">content</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Run multiple simulations
+                    </a>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="res/js/main.js"></script>
+</body>
+</html>
