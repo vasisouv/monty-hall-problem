@@ -5,15 +5,17 @@ button:hover{
 
 }
 .door-cover{
+    position:absolute;
     background-color:red;
     z-index: 5;
     width:200px; height:200px;
+
 }
 .door-content{
-    position:absolute;
     background-color:yellow;
     width:200px; height:200px;
     z-index: -1;
+
 }
 .doors-container{
     padding: 0;
@@ -28,4 +30,8 @@ button:hover{
 
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+}
+.door-icon{
+    width:100px;
+    height:100px;
 }
