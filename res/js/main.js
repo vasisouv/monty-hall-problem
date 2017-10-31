@@ -73,7 +73,6 @@ function playGame(doorClicked){
             do{
                 revealedDoorIndex = Math.floor(Math.random() * 2);
                 revealedDoor = wrongDoors[revealedDoorIndex];
-                console.log("entered!")
             }while (revealedDoor === doorClicked);
             wrongDoors.splice(revealedDoorIndex, 1);
             doorCoverObj = $(revealedDoor).find(doorCover);
@@ -86,22 +85,21 @@ function playGame(doorClicked){
             stage+=1;
             break;
         case 2:
-            if (this !== revealedDoor){
+            if (doorClicked !== revealedDoor){
                 $(".door-cover").each(function (i,obj) {
                     $(obj).fadeOut();
                 });
-                if (this === correctDoor){
-                    $(this).find($(".door-content")).addClass('bg-success').removeClass('bg-secondary');
+                if (doorClicked === correctDoor){
+                    $(doorClicked).find($(".door-content")).addClass('bg-success').removeClass('bg-secondary');
                     info.html("You won the game!");
                     won = true;
                 }
                 else{
-                    $(this).find(doorContent).addClass('bg-danger').removeClass('bg-secondary');
+                    $(doorClicked).find(doorContent).addClass('bg-danger').removeClass('bg-secondary');
                     $(correctDoor).find(doorContent).addClass('bg-success').removeClass('bg-secondary');
                     info.html("You lost the game!");
                 }
                 if (this === firstChoiceDoor){
-                    console.log("door selected = same as the first");
                     keepCounter+=1;
                     $(gamesPlayedKeepCounterObj).html(keepCounter);
                     if (won){
@@ -208,10 +206,6 @@ function runSimulation() {
 
 }
 function finishSimulation(){
-
-
-    console.log("Won : "+simsWon);
-    console.log("lost :"+simsLost);
 
     resultsSimsNumber = $("#resultsSimsNumber");
     resultsSimsStrategy = $("#resultsSimsStrategy");
