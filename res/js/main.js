@@ -32,7 +32,7 @@ $( document ).ready(function() {
                 doorCoverObj = $(revealedDoor).find(doorCover);
                 $(doorCoverObj).fadeOut();
                 info = $("#info");
-                info.html("The game master has decided to reveal a door that contains nothing! Select the same door " +
+                info.html("A door that contains nothing is revealed! Click the same door " +
                     "to keep your choice or click the other door to change. ");
                 // doorCover = $(this).find($(".door-cover"));
                 // $(doorCover).addClass('bg-primary-dark').removeClass('bg-primary');
