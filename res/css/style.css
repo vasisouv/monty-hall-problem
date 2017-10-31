@@ -1,6 +1,9 @@
 button:hover{
     cursor:pointer;
 }
+table{
+    text-align:center;
+}
 .door:hover{
     cursor:pointer;
 }
@@ -55,8 +58,9 @@ button:hover{
     visibility:hidden;
     display:block;
 }
+
 .game-results{
-    margin-top:2%;
+    margin-top:4%;
 }
 @media (max-width: 500px){
     .door-content{

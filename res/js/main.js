@@ -95,7 +95,7 @@ function initializeDoors() {
     $(repeat).css("visibility","hidden");
     doors = $(".door");
     doors.each(function (i,obj) {
-        $(obj).find(doorCover).fadeIn();
+        $(obj).find(doorCover).show();
         $(obj).find(doorContent).removeClass("bg-danger bg-success").addClass("bg-secondary");
     });
     correctDoorIndex = Math.floor(Math.random() * 3);
