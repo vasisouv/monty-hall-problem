@@ -69,7 +69,7 @@ function initializeDoors() {
 function playGame(doorClicked){
     switch(stage) {
         case 1:
-            firstChoiceDoor = this;
+            firstChoiceDoor = doorClicked;
             do{
                 revealedDoorIndex = Math.floor(Math.random() * 2);
                 revealedDoor = wrongDoors[revealedDoorIndex];
