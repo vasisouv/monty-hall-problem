@@ -60,21 +60,55 @@
             </div>
             <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
+                    <div id="info" class="alert alert-primary" role="alert">
+                        Click one of the following doors for your initial choice!
+                    </div>
+
                     <div class="doors-container">
                         <div class="door">
-                            <div class="door-cover bg-primary"></div>
-                            <div class="door-content bg-secondary"></div>
+                            <h5 class="text-center">1</h5>
+                            <div class="door-cover rounded bg-primary "></div>
+                            <div class="door-content rounded bg-secondary"></div>
                         </div>
                         <div class="door">
-                            <div class="door-cover bg-primary"></div>
-                            <div class="door-content bg-secondary"></div>
+                            <h5 class="text-center">2</h5>
+                            <div class="door-cover rounded bg-primary"></div>
+                            <div class="door-content rounded bg-secondary"></div>
                         </div>
                         <div class="door">
-                            <div class="door-cover bg-primary"></div>
-                            <div class="door-content bg-secondary"></div>
+                            <h5 class="text-center">3</h5>
+                            <div class="door-cover rounded bg-primary"></div>
+                            <div class="door-content rounded bg-secondary"></div>
+
                         </div>
                     </div>
+                    <button type="button" class="btn-repeat btn btn-dark">Reset?</button>
+                    <table class="table game-results">
+                        <thead>
+                        <tr>
+                            <th scope="col">Strategy</th>
+                            <th scope="col">Games played</th>
+                            <th scope="col">Games won</th>
+                            <th scope="col">Win %</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">switch door</th>
+                            <td id="gamesPlayedSwitch">0</td>
+                            <td id="gamesWonSwitch">0</td>
+                            <td id="winPercSwitch">NaN</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">keep door</th>
+                            <td id="gamesPlayedKeep">0</td>
+                            <td id="gamesWonKeep">0</td>
+                            <td id="winPercKeep">NaN</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
+
             </div>
         </div>
         <div class="card">

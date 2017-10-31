@@ -1,14 +1,25 @@
 button:hover{
     cursor:pointer;
 }
+.door:hover{
+    cursor:pointer;
+}
+.door:hover .door-cover {
+    background-color: #1733ff !important;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.80);
 
+}
+.bg-primary-dark{
+    background-color: #1733ff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.80);
+}
 .door-cover{
     position:absolute;
     z-index: 5;
     width:200px; height:200px;
+    transition: all 0.1s ease-in-out;
 }
 .door-content{
-    background-color:yellow;
     width:200px; height:200px;
     z-index: -1;
 
@@ -36,4 +47,22 @@ button:hover{
     left: 50%;
     color:white;
     transform: translate(-50%, -50%);
+}
+.btn-repeat{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    visibility:hidden;
+    display:block;
+}
+.game-results{
+    margin-top:2%;
+}
+@media (max-width: 500px){
+    .door-content{
+        width:120px;height:120px;
+    }
+    .door-cover{
+        width:120px;height:120px;
+    }
 }
