@@ -33,7 +33,7 @@ $( document ).ready(function() {
                 $(doorCoverObj).fadeOut();
                 info = $("#info");
                 info.html("A door that contains nothing is revealed! Click the same door " +
-                    "to keep your choice or click the other door to change. ");
+                    "to keep your choice or click the other door to switch your selection. ");
                 // doorCover = $(this).find($(".door-cover"));
                 // $(doorCover).addClass('bg-primary-dark').removeClass('bg-primary');
                 stage+=1;
