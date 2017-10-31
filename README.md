@@ -5,3 +5,5 @@ A simple HTML + js web application that simulates the <a target="_blank" href="h
 The funcionalities included are:
 * Play standalone versions of the problem (stats recorded for each play).
 * Run multiple consecutive simulations and observe the results.
+
+<a href="https://vasisouv.github.io/monty-hall-problem/">Link to the application</a> 
