@@ -91,13 +91,13 @@ function playGame(doorClicked){
                 });
                 if (doorClicked === correctDoor){
                     $(doorClicked).find($(".door-content")).addClass('bg-success').removeClass('bg-secondary');
-                    info.html("You won the game!");
+                    info.html("You won!");
                     won = true;
                 }
                 else{
                     $(doorClicked).find(doorContent).addClass('bg-danger').removeClass('bg-secondary');
                     $(correctDoor).find(doorContent).addClass('bg-success').removeClass('bg-secondary');
-                    info.html("You lost the game!");
+                    info.html("You lost!");
                 }
                 if (doorClicked === firstChoiceDoor){
                     keepCounter+=1;
