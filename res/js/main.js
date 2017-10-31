@@ -63,7 +63,7 @@ $( document ).ready(function() {
                             wonKeepCounter +=1;
                             $(gamesWonKeepCounterObj).html(wonKeepCounter);
                         }
-                        $(winKeepPercObj).html(100*(wonKeepCounter/keepCounter)+" %");
+                        $(winKeepPercObj).html((100*(wonKeepCounter/keepCounter)).toFixed(2)+" %");
                     }else{
                         switchCounter+=1;
                         $(gamesPlayedSwitchCounterObj).html(switchCounter);
@@ -71,7 +71,7 @@ $( document ).ready(function() {
                             wonSwitchCounter +=1;
                             $(gamesWonSwitchCounterObj).html(wonSwitchCounter);
                         }
-                        $(winSwitchPercObj).html(100*(wonSwitchCounter/switchCounter)+" %");
+                        $(winSwitchPercObj).html((100*(wonSwitchCounter/switchCounter)).toFixed(2)+" %");
                     }
                     stage+=1;
                     repeat.css("visibility","visible");
