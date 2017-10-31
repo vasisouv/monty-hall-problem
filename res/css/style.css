@@ -56,14 +56,14 @@ table{
     transform: translate(-50%, -50%);
 }
 .btn-reset{
-    margin-top: 2%;
+    margin-top: 1%;
     visibility:hidden;
     display:block;
     margin-left:auto;
     margin-right:auto;
 }
 .game-results{
-    margin-top:4%;
+    margin-top:2%;
 }
 .form-item{
     margin-left:1%;

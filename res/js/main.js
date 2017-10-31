@@ -99,7 +99,7 @@ function playGame(doorClicked){
                     $(correctDoor).find(doorContent).addClass('bg-success').removeClass('bg-secondary');
                     info.html("You lost the game!");
                 }
-                if (this === firstChoiceDoor){
+                if (doorClicked === firstChoiceDoor){
                     keepCounter+=1;
                     $(gamesPlayedKeepCounterObj).html(keepCounter);
                     if (won){
