@@ -4,6 +4,10 @@ button:hover{
 table{
     text-align:center;
 }
+.horizontal-center{
+    margin-left:auto;
+    margin-right:auto;
+}
 .door:hover{
     cursor:pointer;
 }
@@ -19,11 +23,11 @@ table{
 .door-cover{
     position:absolute;
     z-index: 5;
-    width:200px; height:200px;
+    width:170px; height:170px;
     transition: all 0.1s ease-in-out;
 }
 .door-content{
-    width:200px; height:200px;
+    width:170px; height:170px;
     z-index: -1;
 
 }
@@ -51,16 +55,41 @@ table{
     color:white;
     transform: translate(-50%, -50%);
 }
-.btn-repeat{
-    margin-left: auto;
-    margin-right: auto;
+.btn-reset{
     margin-top: 2%;
     visibility:hidden;
     display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
-
 .game-results{
     margin-top:4%;
+}
+.form-item{
+    margin-left:1%;
+    margin-right:1%;
+}
+.btn-sim{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.progress-counter{
+    text-align:center;
+}
+.progress-bar-container{
+    margin-left:auto;
+    margin-right:auto;
+    display:none;
+    width:50%;
+    margin-bottom:5%;
+}
+.sim-results{
+    display:none;
+}
+.extensive-results-container{
+    margin-top:1%;
 }
 @media (max-width: 500px){
     .door-content{
