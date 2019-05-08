@@ -1,7 +1,6 @@
 <template>
     <div>
-        <TheIntroText />
-
+        <TheInfoPanel />
         <v-tabs
                 color="blue"
                 dark
@@ -14,12 +13,12 @@
             </v-tab>
             <v-tab-item>
                 <v-card flat>
-                    <v-card-text>Text</v-card-text>
+                    <Game />
                 </v-card>
             </v-tab-item>
             <v-tab-item>
                 <v-card flat>
-                    <v-card-text>Text 2</v-card-text>
+                    <Simulations />
                 </v-card>
             </v-tab-item>
         </v-tabs>
@@ -27,10 +26,12 @@
 </template>
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import TheIntroText from '@/components/TheIntroText.vue';
+    import TheInfoPanel from '@/components/TheInfoPanel.vue';
+    import Game from '@/components/Game.vue';
+    import Simulations from '@/components/Simulations.vue';
 
     @Component({
-       components: { TheIntroText },
+       components: { TheInfoPanel, Game, Simulations },
     })
     export default class TheMontyHallProblem extends Vue {
 
